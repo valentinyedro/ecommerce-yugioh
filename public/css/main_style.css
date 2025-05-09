@@ -1,0 +1,172 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main-section{
+    background-color:var(--white-solido);
+    padding-bottom: 80px;
+}
+
+.prod-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+    justify-items: center;
+    row-gap: 3em;
+    column-gap: 5vw;
+    margin-left: 20.4vw;
+    margin-right: 20.4vw;
+    margin-top: 4.5em;
+}
+
+.prod-container .card{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    border-radius: 0.625em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 0;
+}
+
+.foto-card{
+    height: 21em;
+    transition: all 0.3s ease;
+}
+.nombre-card{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.descrip-card{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 220px;
+}
+.precio-card{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-cart{
+    position: absolute;
+    right: 7px;
+    bottom: 4px;
+    background: url("../assets/img/addtocart.png") no-repeat;
+    background-size: 100%;
+    height: 2.5em;
+    width: 2.5em;
+    display:inline-block;
+    border: none;
+    cursor: pointer;
+    margin-left: 4px;
+    justify-self: end;
+    transition: all 0.1s ease;
+}
+.card-cart:active{
+    transform: scale(1.1);
+}
+.producto-link{
+    text-decoration: none;
+    color: #000;
+}
+.prod-container .card .foto-card:hover{
+    transform: scale(1.01);
+}
+.paginacion{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5em;
+    align-items: center;
+    margin-top: 2em;
+}
+.page-buttons, .limpiar-hist-button{
+    display: flex;
+    height: 25px;
+    width: 80px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px #999;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.page-buttons:active, .limpiar-hist-button:active{
+  background-color: #000;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+.current-page{
+    font-weight: bold;
+}
+
+.limpiar-historial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5em;
+}
+.limpiar-hist-button{
+    display: flex;
+    height: 40px;
+    width: 80px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px #999;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.banner-publi{
+    background: url('../assets/img/bannerpubli.png') no-repeat;
+    position: absolute;
+    height: 400px;
+    width: 150px;
+    right: 100px;
+    top: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .prod-container{
+        margin: 2em 0em 0em 0em;
+    }
+    .banner-publi{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .banner-publi{
+        background: url('../assets/img/bannerpublitablet.png') no-repeat;
+        display: flex;
+        position: relative;
+        top: auto;
+        right: auto;
+        height: 150px;
+        width: 400px;
+    }
+    .publi-aside{
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+    }
+}
