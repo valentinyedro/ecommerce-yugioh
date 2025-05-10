@@ -1,4 +1,4 @@
-# Proyecto de Aplicaciones Móviles - E-Commerce Yu-Gi-Oh!
+# Proyecto Consumiendo API Externa - E-Commerce Yu-Gi-Oh!
 
 Este repositorio contiene un proyecto desarrollado como parte de la materia de Aplicaciones Móviles de la Universidad Nacional Arturo Jauretche. El proyecto consiste en un e-commerce especializado en la venta de cartas de Yu-Gi-Oh!. Fue desarrollado por Valentin Yedro y Gabriel Coria como parte de nuestros estudios universitarios.
 
